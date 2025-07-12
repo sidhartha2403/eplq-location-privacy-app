@@ -138,7 +138,7 @@ The last POI (**Charminar**) is intentionally far away.
 ![User Login](screenshots/user_login.png)
 
 ### 🔹 Search POIs (User)
-![Search Results](screenshots/search_results.png)
+![Search POI](screenshots/search_poi.png)
 
 ---
 
