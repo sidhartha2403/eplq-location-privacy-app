@@ -117,13 +117,28 @@ The last POI (**Charminar**) is intentionally far away.
 
 ---
 
-## 📸 Screenshots (Add Your Own)
-Create a `/screenshots` folder and include PNGs:
+## 📸 Screenshots
 
-```md
+### 🔹 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 🔹 Admin Register
 ![Admin Register](screenshots/admin_register.png)
-![User Search](screenshots/user_search.png)
-```
+
+### 🔹 Admin Login
+![Admin Login](screenshots/admin_login.png)
+
+### 🔹 Upload POI (Admin)
+![Upload POI](screenshots/upload_poi.png)
+
+### 🔹 User Register
+![User Register](screenshots/user_register.png)
+
+### 🔹 User Login
+![User Login](screenshots/user_login.png)
+
+### 🔹 Search POIs (User)
+![Search Results](screenshots/search_results.png)
 
 ---
 
