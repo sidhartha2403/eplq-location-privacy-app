@@ -3,7 +3,7 @@
 A web-based solution that enables secure, privacy-preserving spatial range queries over encrypted Points of Interest (POI) using Firebase. Built with HTML, CSS, and JavaScript.
 
 🔗 **Live Demo:** [https://eplq-complete.web.app](https://eplq-complete.web.app)  
-🧪 Note: POIs are stored by the Admin. If no POIs show during user search, please login as Admin and add a few sample locations
+🧪 Note: POIs are stored by the Admin. If no POIs show during user search, please login as Admin and add  few sample locations
 📂 **Repository:** Public • Hosted on Firebase • GitHub Managed
 
 ---
