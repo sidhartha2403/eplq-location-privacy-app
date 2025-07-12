@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search POIs</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Search POIs</h2>
+    <input id="lat" placeholder="Your Latitude">
+    <input id="lng" placeholder="Your Longitude">
+    <input id="radius" placeholder="Search Radius (km)">
+    <button onclick="searchPOIs(parseFloat(lat.value), parseFloat(lng.value), parseFloat(radius.value))">
+      Search
+    </button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/logger.js"></script>
+</body>
+</html>

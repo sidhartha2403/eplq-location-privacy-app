@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload POI</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Upload POI</h2>
+
+    <input type="text" id="poiName" placeholder="POI Name">
+    <input type="number" id="lat" placeholder="Latitude">
+    <input type="number" id="lng" placeholder="Longitude">
+    <button onclick="uploadPOI()">Upload</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/logger.js"></script>
+  <script>
+    function uploadPOI() {
+      const name = document.getElementById("poiName").value;
+      const lat = document.getElementById("lat").value;
+      const lng = document.getElementById("lng").value;
+
+      if (!name || !lat || !lng) {
+        alert("All fields are required.");
+        return;
+      }
+
+      db.collection("pois").add({
+        name: name.trim(),
+        lat: parseFloat(lat),
+        lng: parseFloat(lng),
+        timestamp: new Date().toISOString()
+      }).then(() => {
+        logAction("Admin uploaded POI: " + name);
+        alert("POI added");
+      }).catch(err => {
+        console.error("Upload Error:", err);
+        alert("Upload failed: " + err.message);
+      });
+    }
+  </script>
+</body>
+</html>
