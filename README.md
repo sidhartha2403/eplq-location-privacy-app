@@ -4,6 +4,7 @@ A web-based solution that enables secure, privacy-preserving spatial range queri
 
 🔗 **Live Demo:** [https://eplq-complete.web.app](https://eplq-complete.web.app)  
 🧪 Note: POIs are stored by the Admin. If no POIs show during user search, please login as Admin and add a few sample locations.
+
 📂 **Repository:** Public • Hosted on Firebase • GitHub Managed
 
 ---
