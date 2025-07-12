@@ -80,7 +80,7 @@ To redeploy:
 ```bash
 firebase deploy
 ```
-🧪 Test Instructions for Users
+---
 
 ## 🧪 Try It Out as a User (No Admin Login Required)
 
