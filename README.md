@@ -71,7 +71,8 @@ A web-based solution that enables secure, privacy-preserving spatial range queri
 > For full Firebase functionality, you must configure your own Firebase project and replace `firebase-config.js` values.
 
 ---
-
+🧪 Test Instructions for Users
+---
 ## 🌍 Firebase Deployment
 
 Already deployed to: [https://eplq-complete.web.app](https://eplq-complete.web.app)
@@ -80,6 +81,39 @@ To redeploy:
 ```bash
 firebase deploy
 ```
+
+## 🧪 Try It Out as a User (No Admin Login Required)
+
+You can directly register/login as a **User** and test the POI search feature without needing admin access.
+
+### 🔍 Sample Search Input
+Use the following details on the **User Search Page**:
+
+- **Latitude**: `17.4910`
+- **Longitude**: `78.3920`
+- **Radius**: `2` (in kilometers)
+
+### ✅ What You'll See
+- Nearby POIs like Police Station, Government Hospital, Metro Station, Pharmacy
+- Results filtered by your input radius using geolocation logic
+- These POIs are **already uploaded by Admin** and ready for testing
+
+---
+
+## 📍 Available POI Test Data
+
+| POI Name           | Latitude   | Longitude  | Description                  |
+|--------------------|------------|------------|------------------------------|
+| Police Station     | 17.4945    | 78.3915    | Local police station         |
+| Fire Station       | 17.4870    | 78.3850    | Emergency fire services      |
+| Govt Hospital      | 17.4923    | 78.3991    | 24x7 healthcare center       |
+| Miyapur Metro      | 17.5012    | 78.3960    | Nearest metro station        |
+| Apollo Pharmacy    | 17.4899    | 78.3904    | Medical store with 24x7 access |
+| Charminar 🕌        | 17.3616    | 78.4747    | Historical landmark (far away) |
+
+### 🧪 Bonus: Filtering Test
+The last POI (**Charminar**) is intentionally far away.  
+➡️ Try using a radius of **10+ km** to see it included in the results.
 
 ---
 
