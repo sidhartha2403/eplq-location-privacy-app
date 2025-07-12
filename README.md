@@ -71,8 +71,7 @@ A web-based solution that enables secure, privacy-preserving spatial range queri
 > For full Firebase functionality, you must configure your own Firebase project and replace `firebase-config.js` values.
 
 ---
-🧪 Test Instructions for Users
----
+
 ## 🌍 Firebase Deployment
 
 Already deployed to: [https://eplq-complete.web.app](https://eplq-complete.web.app)
@@ -81,6 +80,7 @@ To redeploy:
 ```bash
 firebase deploy
 ```
+🧪 Test Instructions for Users
 
 ## 🧪 Try It Out as a User (No Admin Login Required)
 
